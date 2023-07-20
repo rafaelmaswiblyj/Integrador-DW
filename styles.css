@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+}
+
 body {
     margin: 0px;
     overflow-x: hidden;
@@ -19,6 +23,9 @@ header {
     align-items: center;
     background-color: #4CC9F0;
     z-index: 2;
+    box-shadow: 1px 5px 4px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 5px 4px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 5px 4px -3px rgba(0, 0, 0, 0.75);
 }
 
 nav {
@@ -97,7 +104,7 @@ main {
     height: 70%;
 }
 
-.contenedor_2{
+.contenedor_2 {
     width: 100vw;
     height: 100vh;
     background: rgb(114, 9, 183);
@@ -107,7 +114,7 @@ main {
     align-items: center;
 }
 
-.cursos{
+.cursos {
     background-color: aliceblue;
     width: 80%;
     height: 75%;
@@ -122,26 +129,111 @@ main {
     -moz-box-shadow: 10px 10px 16px -3px rgba(0, 0, 0, 0.75);
 }
 
-.cursos_h1{
+.cursos_h1 {
     margin: 0px;
     padding: 0px;
     text-align: center;
     font-size: 3rem;
 }
 
-.cursos_contenedor_1{
+.cursos_contenedor_1 {
     width: 100%;
-    height: 50%;
+    height: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 
-.cursos_contenedores{
-    width: 20%;
+.cursos_contenedores {
+    width: 21%;
     height: 100%;
     background-color: blue;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+}
+
+.img_cursos {
+    width: 65%;
+    height: 45%;
+}
+
+.p_cursos {
+    font-size: 1em;
+    margin: 0px;
+}
+
+.cursos_div {
+    height: 47%;
+}
+
+.cursos_bt {
+    border: 2px solid black;
+    background-color: #7209B7;
+    border-radius: 10px;
+}
+
+.contenedor_3 {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(114, 9, 183);
+    background: linear-gradient(135deg, rgba(114, 9, 183, 1) 0%, rgba(67, 97, 238, 1) 50%, rgba(76, 201, 240, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    height: 40%;
+    background-color: #7209B7;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+}
+
+.form_contacto {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p_contacto {
+    padding: 10px 50px;
+    color: #FFFFFF;
+}
+
+.contacto_bt {
+    background-color: #b74bff;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.contacto_input {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #b74bff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
