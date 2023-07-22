@@ -199,7 +199,7 @@ main {
 
 .cursos_contenedores {
     width: 350px;
-    height: 570px;
+    height: 530px;
     background-color: #4361EE;
     margin: 0px;
     display: flex;
@@ -214,8 +214,8 @@ main {
 }
 
 .cursos_contenedores:hover{
-    width: 25%;
-    height: 105%;
+    width: 360px;
+    height: 540px;
 }
 
 .img_cursos {
@@ -344,8 +344,8 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 20%;
-    height: 50%;
+    width: 320px;
+    height: 540px;
     background-color: #7209B7;
     border-radius: 20px;
     box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
@@ -411,8 +411,8 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 20%;
-    height: 35%;
+    width: 320px;
+    height: 350px;
     background-color: #7209B7;
     border-radius: 20px;
     box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
@@ -477,7 +477,7 @@ footer {
     }
 
     .cursos_contenedores:hover{
-        width: 360px;
+        width: 370px;
     }
 
     .form_curso{
