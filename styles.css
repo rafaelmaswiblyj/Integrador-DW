@@ -12,6 +12,7 @@ h1 {
     padding: 0px;
     margin: 0px;
     margin-left: 10%;
+    color: black;
 }
 
 header {
@@ -89,6 +90,7 @@ a {
 
 p {
     font-size: 20px;
+    color: black;
 }
 
 main {
@@ -117,7 +119,7 @@ main {
 }
 
 .quienes_somos {
-    background-color: aliceblue;
+    background-color: #aa6bd4;
     width: 70%;
     height: 50%;
     display: flex;
@@ -158,7 +160,7 @@ main {
 }
 
 .cursos {
-    background-color: aliceblue;
+    background-color: #4CC9F0;
     width: 80%;
     height: 75%;
     display: flex;
@@ -191,7 +193,7 @@ main {
 .cursos_contenedores {
     width: 21%;
     height: 100%;
-    background-color: blue;
+    background-color: #4361EE;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -201,16 +203,29 @@ main {
     box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    transition: all .5s;
+}
+
+.cursos_contenedores:hover{
+    width: 25%;
+    height: 105%;
 }
 
 .img_cursos {
     width: 65%;
     height: 45%;
+    overflow: hidden;
 }
 
 .p_cursos {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0px;
+    color: #FFFFFF;
+    padding: 4%;
+}
+
+.h3_cursos{
+    color: white;
 }
 
 .cursos_div {
@@ -218,9 +233,26 @@ main {
 }
 
 .cursos_bt {
-    border: 2px solid black;
-    background-color: #7209B7;
+    border: 1px solid black;
+    background-color: #f7388e;
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+
+.cursos_bt:hover{
+    background-color: #f74d99;
+}
+
+.form_curso{
+    width: 15%;
+    height: 8%;
+    transition: all .4s;
+}
+
+.form_curso:hover{
+    width: 17%;
 }
 
 .contenedor_3 {
@@ -279,13 +311,18 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
+    height: 5%;
 }
+
 .body_registro{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    background: rgb(67,97,238);
+    background: linear-gradient(153deg, rgba(67,97,238,1) 0%, rgba(58,12,163,1) 50%, rgba(114,9,183,1) 100%);
 }
 
 .contenedor_registro{
@@ -329,4 +366,8 @@ footer {
 
 .a_rademy:hover{
     font-size: 1.1em;
+}
+
+.p_qs::first-letter{
+    font-size: 1.2em;
 }
