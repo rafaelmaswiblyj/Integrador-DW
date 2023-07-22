@@ -51,8 +51,6 @@ header {
     background: linear-gradient(to right, #4CC9F0 0%, #2259F0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    
 }
 
 nav {
@@ -118,7 +116,7 @@ main {
     align-items: center;
 }
 
-.quienes_somos {
+.quienes_somos{
     background-color: #aa6bd4;
     width: 70%;
     height: 50%;
@@ -134,10 +132,11 @@ main {
 
 .quienes_somos_2 {
     width: 50%;
-    height: 65%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .h1_qs{
@@ -282,7 +281,7 @@ main {
 
 .form_contacto {
     width: 50%;
-    height: 40%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,11 +299,6 @@ main {
     border-radius: 10px;
 }
 
-.contacto_input {
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
 footer {
     background-color: #b74bff;
     display: flex;
@@ -312,7 +306,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 5%;
+    height: 6%;
+}
+
+.footer_p{
+    margin: 0px;
+    padding-right: 2%;
+}
+
+.footer_ul{
+    width: 10%;
+    height: 100%;
+    align-items: center;
 }
 
 .body_registro{
@@ -331,20 +336,55 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 20%;
-    height: 40%;
+    height: 50%;
     background-color: #7209B7;
+    border-radius: 20px;
+    box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+}
+
+.h2_registro{
+    color: black;
 }
 
 .form_registro{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 60%;
 }
 
 .p_registro{
     text-align: center;
+}
+
+.inputs_registro{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #aa6bd4;
+    color: black;
+}
+
+.inputs_registro::placeholder{
+    color: black;
+    opacity: 1;
+}
+
+.registro_bt{
+    border-radius: 10px;
+    background-color: #ab2dff;
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+.registro_bt:hover{
+    background-color: #bd5aff;
+}
+
+.registro_a{
+    text-decoration: underline;
 }
 
 .body_login{
@@ -353,6 +393,30 @@ footer {
     align-items: center;
     width: 100%;
     height: 100%;
+    background: rgb(67,97,238);
+    background: linear-gradient(153deg, rgba(67,97,238,1) 0%, rgba(58,12,163,1) 50%, rgba(114,9,183,1) 100%);
+}
+
+.contenedor_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 35%;
+    background-color: #7209B7;
+    border-radius: 20px;
+    box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 13px -4px rgba(0, 0, 0, 0.75);
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 50%;
 }
 
 .a_header{
@@ -370,4 +434,46 @@ footer {
 
 .p_qs::first-letter{
     font-size: 1.2em;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1200px){
+    .quienes_somos{
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 90%;
+        align-items: center;
+    }
+    .img_qs{
+        height: 40%;
+        width: 55%;
+    }
+    .quienes_somos_2{
+        width: 90%;
+        height: 30%;
+    }
+
+}
+
+@media (max-width: 1700px){
+    .cursos{
+        flex-wrap: wrap;
+        height: 100%;
+        width: 90%;
+    }
+
+    .p_cursos{
+        display: none;
+    }
+
+    .cursos_contenedores{
+        height: 45%;
+    }
+
+    .cursos_contenedor_1{
+        flex-wrap: wrap;
+        height: 80%;
+    }
 }
