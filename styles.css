@@ -31,6 +31,14 @@ header {
     -moz-box-shadow: 1px 5px 4px -3px rgba(0, 0, 0, 0.75);
 }
 
+#header_check{
+    display: none;
+}
+
+.header_label{
+    display: none;
+}
+
 .h1_rademy{
     width: 40%;
     height: 100%;
@@ -190,8 +198,8 @@ main {
 
 
 .cursos_contenedores {
-    width: 21%;
-    height: 100%;
+    width: 350px;
+    height: 570px;
     background-color: #4361EE;
     margin: 0px;
     display: flex;
@@ -269,8 +277,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 22%;
-    height: 40%;
+    width: 450px;
+    height: 430px;
+    padding: 5px;
     background-color: #7209B7;
     text-align: center;
     border-radius: 20px;
@@ -438,7 +447,7 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 1200px){
+@media (max-width: 1750px){
     .quienes_somos{
         flex-direction: column;
         justify-content: space-evenly;
@@ -447,8 +456,8 @@ footer {
         align-items: center;
     }
     .img_qs{
-        height: 40%;
-        width: 55%;
+        height: 450px;
+        width: 450px;
     }
     .quienes_somos_2{
         width: 90%;
@@ -457,23 +466,98 @@ footer {
 
 }
 
-@media (max-width: 1700px){
-    .cursos{
+@media (max-width: 1800px){
+    .cursos_contenedor_1{
         flex-wrap: wrap;
-        height: 100%;
-        width: 90%;
-    }
-
-    .p_cursos{
-        display: none;
+        overflow: scroll;
     }
 
     .cursos_contenedores{
-        height: 45%;
+        margin: 12px;
     }
 
-    .cursos_contenedor_1{
+    .cursos_contenedores:hover{
+        width: 360px;
+    }
+
+    .form_curso{
+        width: 200px;
+    }
+
+    .form_curso:hover{
+        width: 300px;
+    }
+
+    .contacto_div{
+        width: 450px;
+        height: 430px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1300px){
+    .carousel{
+        display: none;
+    }
+
+    header{
+        height: 12vh;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
-        height: 80%;
+    }
+
+    .h1_rademy{
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        background: #4CC9F0;
+    background: linear-gradient(to right, #4CC9F0 0%, #3A0CA3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    }
+
+    .header_ul{
+        width: 100%;
+    }
+
+    nav{
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 700px){
+    .img_qs{
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer_ul{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 550px){
+    nav{
+        justify-content: space-around;
+    }
+
+    footer{
+        flex-direction: column;
+        height: 10%;
+    }
+
+    .footer_p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px){
+    .quienes_somos{
+        width: 100%;
     }
 }
