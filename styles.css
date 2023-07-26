@@ -576,8 +576,7 @@ footer {
 
 @media (max-width: 700px){
     .img_qs{
-        width: 300px;
-        height: 300px;
+        display: none;
     }
 
     .footer_ul{
