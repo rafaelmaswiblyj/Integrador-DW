@@ -516,7 +516,7 @@ footer {
     }
 
     .form_curso:hover{
-        width: 300px;
+        width: 270px;
     }
 
     .contacto_div{
@@ -577,6 +577,10 @@ footer {
 @media (max-width: 700px){
     .img_qs{
         display: none;
+    }
+
+    .p_qs{
+        font-size: 0.9rem;
     }
 
     .footer_ul{
